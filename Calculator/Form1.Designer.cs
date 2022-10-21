@@ -37,6 +37,7 @@ namespace Calculator
             this.txtB = new System.Windows.Forms.TextBox();
             this.txtKQ = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCong
@@ -112,11 +113,23 @@ namespace Calculator
             this.label4.TabIndex = 6;
             this.label4.Text = "Kết quả:";
             // 
+            // btnTru
+            // 
+            this.btnTru.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTru.Location = new System.Drawing.Point(217, 239);
+            this.btnTru.Name = "btnTru";
+            this.btnTru.Size = new System.Drawing.Size(75, 41);
+            this.btnTru.TabIndex = 8;
+            this.btnTru.Text = "-";
+            this.btnTru.UseVisualStyleBackColor = true;
+            this.btnTru.Click += new System.EventHandler(this.btnTru_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnTru);
             this.Controls.Add(this.txtKQ);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtB);
@@ -142,6 +155,7 @@ namespace Calculator
         private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.TextBox txtKQ;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnTru;
     }
 }
 
