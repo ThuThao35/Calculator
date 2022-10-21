@@ -20,7 +20,9 @@ namespace Calculator
         private void btnCong_Click(object sender, EventArgs e)
         {
             int a,  b, ketQua;
-            if (txtA.Text!=string.Empty)
+
+            if (txtA.Text != string.Empty || txtB.Text!=String.Empty)
+
             {
                 a = int.Parse(txtA.Text);
                 b = int.Parse(txtB.Text);
